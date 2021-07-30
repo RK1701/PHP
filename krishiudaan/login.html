@@ -1,0 +1,152 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- aos fade link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- css  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- icon link  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+        <style type="text/css">
+            body{
+                background: yellowgreen;
+            }
+            .container{
+                margin-top: 8%;
+                margin-left: 30%;
+                /*margin-right: auto;*/
+            }
+            .card{
+                box-shadow: 0 19px 38px rgba(0,0,0,0.3), 0 15px 12px rgba(0,0,0,0.2);
+            }
+            .user-session__logo {
+                 /*padding: 41px 0 69px 0;*/
+                 /*margin: 0 auto;*/
+
+                 /*margin-left: 42%*/
+                 
+            }
+            .img-logo{
+                margin: 0 0 20px 170px;
+                 max-width: 150px;
+                 display: block;
+                 justify-content: space-around;
+                 max-height: 150px;
+                 border: 2px solid gray;
+                 border-radius: 10px;
+                 /*margin-left: auto;*/
+            }
+            .user-session__form {
+                margin: 0 auto;
+                max-width: 300px;
+            }
+        </style>
+    <title>KRISHIUDAAN</title>
+</head>
+<body>
+
+<div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <div class="card align-center">
+          <div class="card-body">
+            <div class="user-session__logo">
+              <a href="#">
+                <img class="img-logo align-center" src="logo.png" alt="Agrimp color">
+              </a>    
+            </div>
+            <div class="user-session__form">
+              <h2 class="text-center mb-3">Login</h2>
+             <form class="new_user" id="new_user" action="" accept-charset="UTF-8" method="post">
+                <input name="utf8" type="hidden" value="✓">
+                <input type="hidden" name="authenticity">
+                <div class="form-group">
+                  <label for="user_Email:">Email:</label>
+                  <input autofocus="autofocus" class="form-control" type="email" value="" name="user" id="user_email">
+                </div>
+
+                <div class="form-group">
+                  <label for="user_Password:">Password:</label>
+                  <input autocomplete="off" class="form-control" type="password" name="user" id="user_password">
+                </div>
+
+                <div class="actions">
+                  <input type="submit" name="login" value="Login" class="btn btn-primary" data-disable-with="Login">
+                </div>
+             </form>   
+            </div>
+            <br>
+            <div class="user-session__links text-center">
+                <a href="" data-toggle="modal" data-target="#exampleModal">Forgot your password?</a><br>
+
+                <a href="signup.html">Not registered yet? Sign up</a><br>
+
+            </div>
+            <!-- <a href="#" class="btn btn-primary">Go somewhere</a> -->
+          </div>
+        </div>
+      </div>
+    </div>
+</div>
+
+   <!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog" role="document">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Forgote password here,</h5>
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+          <span aria-hidden="true">&times;</span>
+        </button>
+      </div>
+      <div class="modal-body">
+          <p class="text text-muted">Send Your Password PhoneNo. or EmailId</p>
+              <div class="form-group">
+                <label for="user_Email:">Email</label>
+                <input autofocus="autofocus" class="form-control" type="email" value="" name="user" id="user_email" required="required" placeholder="ex- abcd@gmail.com">
+            </div>
+
+               <hr> 
+               <!-- <p class="text-muted text-center">or</p> -->
+
+               <div class="form-group">
+                <label for="user_phone:">PhoneNo.</label>
+                <input autofocus="autofocus" class="form-control" type="text" value="" name="user" id="user_phone" required="required" placeholder="ex- 00000 00000">
+            </div>
+           <!-- <input required="required" id="phone-number" type="text" name="user[phone_number]"> -->
+      </div>
+      <div class="modal-footer">
+        <button type="button" class="btn btn-secondary" data-dismiss="modal">Close</button>
+        <button type="button" class="btn btn-primary">Send</button>
+      </div>
+    </div>
+  </div>
+</div>
+
+<!-- optional javascript  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="agri.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

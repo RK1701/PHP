@@ -1,0 +1,487 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <!-- aos fade link -->
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css"
+        integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <!-- css  -->
+    <!-- <link rel="stylesheet" href="style.css"> -->
+
+    <!-- icon link  -->
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css"
+        integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous" />
+       
+    <title>KRISHIUDAAN</title>
+</head>
+<body>
+
+ <!-- header of signup form -->
+  <div class="container mt-5">
+    <div class="row">
+    <div class="col-md-12 user-registration__header">
+      <h2>Sign Up</h2>
+      <p>If you are already registered <a class="link-green" href="login.html">Login here</a>. Otherwise, tell us more about you! Your sign up information will help us providing a great experience.</p>
+      <p>For sellers, additional information will be needed to receive funds.</p>
+    </div>
+  </div>
+  <!-- tablist -->
+    <ul class="nav nav-tabs" id="myTab" role="tablist">
+      <li class="nav-item">
+        <a class="nav-link active" id="home-tab" data-toggle="tab" href="#Buyer" role="tab" aria-controls="Buyer" aria-selected="true">Buyer</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" id="profile-tab" data-toggle="tab" href="#profile" role="tab" aria-controls="profile" aria-selected="false">Seller</a>
+      </li>
+    </ul>
+
+<!-- content of tablist -->
+    <div class="tab-content" id="myTabContent">
+<!-- tab 1  -->
+      <div class="tab-pane fade show active" id="Buyer" role="tabpanel" aria-labelledby="Buyer-tab" style="background: #B1BBAD;">
+        <div class="row mt-2" >
+          <div class="col-md-6 user-registration__col mt-1">
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label for="user_first_name">First Name</label>
+                <input class="form-control" required="required" type="text" name="user[first_name]" id="user_first_name">
+              </div>
+
+              <div class="col-md-6 form-group">
+                <label for="user_last_name">Last Name</label>
+                <input class="form-control" required="required" type="text" name="user[last_name]" id="user_last_name">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 form-group">
+                <label for="user_company">Company</label>
+                <input class="form-control" required="required" type="text" name="user[company]" id="user_company">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-12 col-lg-6 form-group">
+                <label class="required" for="user_vatin">Company VAT</label>
+                <input class="form-control" type="text" name="user[vatin]" id="user_vatin">
+              </div>
+
+              <div class="col-md-12 col-lg-6 form-group">
+                <label class="required" for="user_mobile_number">Mobile Number</label><br>
+                <input class="form-control" required="required" id="phone-number" type="text" name="user[phone_number]">
+              </div>
+            </div>
+
+            <div class="row ">
+              <div class="col-md-12 form-group">
+                <label class="required" for="user_fiscal_address">Address</label><br>
+                <input class="form-control" required="required" type="text" name="user[fiscal_address]" id="user_fiscal_address">
+              </div>
+            </div>
+
+            <div class="row">
+              <div class="col-md-6 form-group">
+                <label class="required" for="user_zip_code">Zip Code</label><br>
+                <input class="form-control" required="required" type="text" name="user[zip_code]" id="user_zip_code">
+              </div>
+              <div class="col-md-6 form-group">
+                <label for="user_country">Country</label>
+                <select class="form-control" required="required" name="user[country]" id="user_country"><option value="">Select one</option>
+                  <option value="AF">Afghanistan</option>
+                  <option value="AX">Åland Islands</option>
+                  <option value="AL">Albania</option>
+                  <option value="DZ">Algeria</option>
+
+                  <option value="YE">Yemen</option>
+                  <option value="ZM">Zambia</option>
+                  <option value="ZW">Zimbabwe</option></select>
+                </div>
+              </div>
+              <div class="row ">
+                <div class="col-md-12 form-group">
+                  <label class="required" for="user_company_activity">Company Activity</label>
+                  <select class="form-control" required="required" name="user[company_activity_id]" id="user_company_activity_id"><option value="">Select one</option>
+                    <option value="1">Farming Production</option>
+                    <option value="2">Imports/Exports</option>
+                    <option value="3">Food industry</option>
+                    <option value="4">Retail</option></select>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="user_preferred_language">Preferred Language</label><br>
+                    <select class="form-control" name="user[preferred_language]" id="user_preferred_language"><option selected="selected" value="en">English (EN)</option>
+                      <option value="pt">Gujrati (GUJ)</option>
+                      <option value="es">Hindi (HI)</option>
+                    </select>
+                  </div>
+                </div>
+              </div>
+              <div class="col-md-6 user-registration__col mt-1">
+                <div class="row mt-1">
+                  <div class="col-md-12">
+                    <label for="user_preferred_products">Preferred Product(s)</label>
+                  </div>
+                </div>
+                <hr class="mt-0">
+                <div class="row">
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_2" value="2">
+                    <label for="user_preferred_product_ids_2">Corn</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_7" value="7">
+                    <label for="user_preferred_product_ids_7">Almond</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_11" value="11">
+                    <label for="user_preferred_product_ids_11">Hazelnut</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_6" value="6">
+                    <label for="user_preferred_product_ids_6">Triticale</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_5" value="5">
+                    <label for="user_preferred_product_ids_5">Barley</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_1" value="1">
+                    <label for="user_preferred_product_ids_1">Rice</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_4" value="4">
+                    <label for="user_preferred_product_ids_4">Wheat</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_9" value="9">
+                    <label for="user_preferred_product_ids_9">Cocoa</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_13" value="13">
+                    <label for="user_preferred_product_ids_13">Cashew</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_10" value="10">
+                    <label for="user_preferred_product_ids_10">Pistachio</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_12" value="12">
+                    <label for="user_preferred_product_ids_12">Specialty Coffee</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_8" value="8">
+                    <label for="user_preferred_product_ids_8">Walnut</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_14" value="14">
+                    <label for="user_preferred_product_ids_14">Olive Oil</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_17" value="17">
+                    <label for="user_preferred_product_ids_17">Peanut</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_16" value="16">
+                    <label for="user_preferred_product_ids_16">Coffee</label>
+                  </div>
+                  <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+                    <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_15" value="15">
+                    <label for="user_preferred_product_ids_15">Pine Nut</label>
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="user_other_preferred_products">Other Preferred Product(s)</label>
+                    <input class="form-control" type="text" name="user[other_preferred_products]" id="user_other_preferred_products">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="user_email">Email</label>
+                    <input class="form-control" required="required" type="email" value="" name="user[email]" id="user_email">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="user_password">Password</label>
+                    <em>(6 characters minimum)</em>
+                    <input autocomplete="off" class="form-control" required="required" type="password" name="user[password]" id="user_password">
+                  </div>
+                </div>
+
+                <div class="row">
+                  <div class="col-md-12 form-group">
+                    <label for="user_password_confirmation">Password Confirmation</label>
+                    <input autocomplete="off" class="form-control" required="required" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+                  </div>
+                </div>
+
+                <div class="row mt-3">
+                  <div class="col-md-12">
+                    <div class="form-check">
+                      <label class="form-check-label">
+                        <input name="user[terms_and_conditions]" type="hidden" value="0"><input class="form-check-input" required="required" type="checkbox" value="1" name="user[terms_and_conditions]" id="user_terms_and_conditions">
+                        <span>I agree with the <a target="_blank" class="link-green" href="/terms-conditions/agri-marketplace"><span class="translation_missing" title="translation missing: en.devise.registrations.new.agri_marketplace_terms">Agri Marketplace Terms</span></a> and <a target="_blank" class="link-green" href="/privacy">Privacy Policy</a></span>
+                      </label>
+                    </div>
+                  </div>
+                </div>
+                <br>
+                <div class="row">
+                  <div class="col-md-12">
+                    <input type="submit" name="commit" value="Sign Up" class="btn btn-primary" data-disable-with="Sign Up">
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+    <hr class="mt-2 "></hr>
+     
+      </div>
+<!-- tab 2 -->
+      <div class="tab-pane fade" id="profile" role="tabpanel" aria-labelledby="profile-tab">
+          <div class="row mt-2">
+      <div class="col-md-6 user-registration__col mt-1">
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label for="user_first_name">First Name</label>
+            <input class="form-control" required="required" type="text" name="user[first_name]" id="user_first_name">
+          </div>
+
+          <div class="col-md-6 form-group">
+            <label for="user_last_name">Last Name</label>
+            <input class="form-control" required="required" type="text" name="user[last_name]" id="user_last_name">
+          </div>
+        </div>
+
+       <!--  <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="user_company">Company</label>
+            <input class="form-control" required="required" type="text" name="user[company]" id="user_company">
+          </div>
+        </div> -->
+
+        <div class="row">
+          <!-- <div class="col-md-12 col-lg-6 form-group">
+            <label class="required" for="user_vatin">Company VAT</label>
+            <input class="form-control" type="text" name="user[vatin]" id="user_vatin">
+          </div> -->
+          <div class="col-md-12 col-lg-6 form-group">
+            <label for="user_country">Gender</label>
+            <select class="form-control" required="required" name="user[country]" id="user_country"><option value="">Please Select</option>
+              <option value="male">Male</option>
+              <option value="female">Female</option>
+              <option value="other">N/A</option>
+            </select>
+          </div>
+
+          <div class="col-md-12 col-lg-6 form-group">
+            <label class="required" for="user_mobile_number">Mobile Number</label><br>
+            <input class="form-control" required="required" id="phone-number" type="text" name="user[phone_number]">
+          </div>
+        </div>
+
+        <div class="row ">
+          <div class="col-md-12 form-group">
+            <label class="required" for="user_fiscal_address">Address</label><br>
+            <input class="form-control" required="required" type="text" name="user[fiscal_address]" id="user_fiscal_address">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-6 form-group">
+            <label class="required" for="user_zip_code">Zip Code</label><br>
+            <input class="form-control" required="required" type="text" name="user[zip_code]" id="user_zip_code">
+          </div>
+          <div class="col-md-6 form-group">
+            <label for="user_country">Country</label>
+            <select class="form-control" required="required" name="user[country]" id="user_country"><option value="">Select one</option>
+              <option value="AF">Afghanistan</option>
+              <option value="AX">Åland Islands</option>
+              <option value="AL">Albania</option>
+              <option value="DZ">Algeria</option>
+
+              <option value="YE">Yemen</option>
+              <option value="ZM">Zambia</option>
+              <option value="ZW">Zimbabwe</option></select>
+            </div>
+        </div>
+        <div class="row ">
+          <div class="col-md-12 form-group">
+            <label class="required" for="user_company_activity">Company Activity</label>
+            <select class="form-control" required="required" name="user[company_activity_id]" id="user_company_activity_id"><option value="">Select one</option>
+              <option value="1">Farming Production</option>
+              <option value="2">Imports/Exports</option>
+              <option value="3">Food industry</option>
+              <option value="4">Retail</option></select>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="user_preferred_language">Preferred Language</label><br>
+            <select class="form-control" name="user[preferred_language]" id="user_preferred_language"><option selected="selected" value="en">English (EN)</option>
+              <option value="pt">Gujrati (GUJ)</option>
+              <option value="es">Hindi (HI)</option>
+            </select>
+            </div>
+        </div>
+      </div>
+      <div class="col-md-6 user-registration__col mt-1">
+        <div class="row mt-1">
+          <div class="col-md-12">
+            <label for="user_preferred_products">Preferred Product(s)</label>
+          </div>
+        </div>
+        <hr class="mt-0">
+        <div class="row">
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_2" value="2">
+              <label for="user_preferred_product_ids_2">Corn</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_7" value="7">
+              <label for="user_preferred_product_ids_7">Almond</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_11" value="11">
+              <label for="user_preferred_product_ids_11">Hazelnut</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_6" value="6">
+              <label for="user_preferred_product_ids_6">Triticale</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_5" value="5">
+              <label for="user_preferred_product_ids_5">Barley</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_1" value="1">
+              <label for="user_preferred_product_ids_1">Rice</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_4" value="4">
+              <label for="user_preferred_product_ids_4">Wheat</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_9" value="9">
+              <label for="user_preferred_product_ids_9">Cocoa</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_13" value="13">
+              <label for="user_preferred_product_ids_13">Cashew</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_10" value="10">
+              <label for="user_preferred_product_ids_10">Pistachio</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_12" value="12">
+              <label for="user_preferred_product_ids_12">Specialty Coffee</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_8" value="8">
+              <label for="user_preferred_product_ids_8">Walnut</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_14" value="14">
+              <label for="user_preferred_product_ids_14">Olive Oil</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_17" value="17">
+              <label for="user_preferred_product_ids_17">Peanut</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_16" value="16">
+              <label for="user_preferred_product_ids_16">Coffee</label>
+            </div>
+            <div class="col-lg-4 col-md-6 col-sm-12 form-group">
+              <input type="checkbox" name="user[preferred_product_ids][]" id="user_preferred_product_ids_15" value="15">
+              <label for="user_preferred_product_ids_15">Pine Nut</label>
+            </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="user_other_preferred_products">Other Preferred Product(s)</label>
+            <input class="form-control" type="text" name="user[other_preferred_products]" id="user_other_preferred_products">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="user_email">Email</label>
+            <input class="form-control" required="required" type="email" value="" name="user[email]" id="user_email">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="user_password">Password</label>
+              <em>(6 characters minimum)</em>
+            <input autocomplete="off" class="form-control" required="required" type="password" name="user[password]" id="user_password">
+          </div>
+        </div>
+
+        <div class="row">
+          <div class="col-md-12 form-group">
+            <label for="user_password_confirmation">Password Confirmation</label>
+            <input autocomplete="off" class="form-control" required="required" type="password" name="user[password_confirmation]" id="user_password_confirmation">
+          </div>
+        </div>
+
+        <div class="row mt-3">
+          <div class="col-md-12">
+            <div class="form-check">
+              <label class="form-check-label">
+                <input name="user[terms_and_conditions]" type="hidden" value="0"><input class="form-check-input" required="required" type="checkbox" value="1" name="user[terms_and_conditions]" id="user_terms_and_conditions">
+                <span>I agree with the <a target="_blank" class="link-green" href="/terms-conditions/agri-marketplace"><span class="translation_missing" title="translation missing: en.devise.registrations.new.agri_marketplace_terms">Agri Marketplace Terms</span></a> and <a target="_blank" class="link-green" href="/privacy">Privacy Policy</a></span>
+              </label>
+            </div>
+          </div>
+        </div>
+        <br>
+        <div class="row">
+          <div class="col-md-12">
+            <input type="submit" name="commit" value="Sign Up" class="btn btn-primary" data-disable-with="Sign Up">
+          </div>
+        </div>
+
+      </div>
+    </div>
+      <hr class="md-0"></hr>
+      </div>
+
+    </div>
+  </div>
+<!-- optional javascript  -->
+  <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
+  <script>
+    AOS.init();
+  </script>
+    <script src="agri.js"></script>
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js"
+        integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.12.9/umd/popper.min.js"
+        integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q"
+        crossorigin="anonymous"></script>
+    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/js/bootstrap.min.js"
+        integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl"
+        crossorigin="anonymous"></script>
+</body>
+</html>

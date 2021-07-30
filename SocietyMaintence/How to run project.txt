@@ -1,0 +1,4 @@
+1. Copy society maintenance folder and paste it on C:\xampp\htdocs
+2. copy database1 folder and paste it on C:\xampp\mysql\data
+3. Open browser -> http://localhost/society maintenance1
+   
